@@ -69,10 +69,10 @@ The output will be in `dist/Portify.exe`.
 | Issue | Solution |
 |-------|----------|
 | "No UPnP device found" | Enable UPnP in your router settings |
-| CGNAT warning | Your ISP shares IPs — use a tunnel service like [Playit.gg](https://playit.gg) or [ngrok](https://ngrok.com) |
+| CGNAT warning | Your ISP shares IPs - use a tunnel service like [Playit.gg](https://playit.gg) or [ngrok](https://ngrok.com) |
 | Double NAT detected | Set your ISP modem to Bridge Mode |
 | Test failed | Ensure your Minecraft server is fully loaded before testing |
-| Firewall blocked | Run as Administrator (right-click → Run as administrator)
+| Firewall blocked | Run as Administrator (right-click -> Run as administrator)
 
 ## License
 

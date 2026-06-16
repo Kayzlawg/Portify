@@ -78,4 +78,4 @@ The output will be in `dist/Portify.exe`.
 
 MIT
 
-Also this was mostly vibe-coded dont hate me since it works
+Also this was mostly vibe-coded dont hate me

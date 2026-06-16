@@ -1,4 +1,4 @@
-Revised Requirements
+Requirements
 ====================
 
 - Operating System: Windows (Required for automatic firewall rule management; user must have Administrator privileges to accept UAC elevation).

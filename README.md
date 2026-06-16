@@ -8,13 +8,13 @@ Portify is a lightweight Windows application that automates port forwarding and 
 
 ## Features
 
-- **One-click port forwarding** — Automatically forwards ports via UPnP
-- **Firewall management** — Adds/removes Windows Defender Firewall rules (requires admin)
-- **Java & Bedrock support** — Pre-configured ports for both editions
-- **Custom ports** — Forward any port with TCP, UDP, or both
-- **Connection testing** — Verify your server is reachable from the internet
-- **CGNAT/Double NAT detection** — Warns you if port forwarding won't work
-- **Manual setup guides** — Step-by-step instructions for TP-Link, Netgear, ASUS, and Linksys routers
+- **One-click port forwarding** - Automatically forwards ports via UPnP
+- **Firewall management** - Adds/removes Windows Defender Firewall rules (requires admin)
+- **Java & Bedrock support**  Pre-configured ports for both editions
+- **Custom ports** - Forward any port with TCP, UDP, or both
+- **Connection testing** - Verify your server is reachable from the internet
+- **CGNAT/Double NAT detection** - Warns you if port forwarding won't work
+- **Manual setup guides** - Step-by-step instructions for TP-Link, Netgear, ASUS, and Linksys routers
 
 ## Requirements
 

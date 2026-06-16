@@ -912,40 +912,16 @@ class PortifyApp(ctk.CTk):
             self.proto_menu.configure(state="normal")
 
     def _set_window_icon(self):
-        """Generate a gold-on-dark 'P' icon and set it as the window icon."""
+        """Set the window icon from the bundled .ico file."""
         try:
-            from PIL import Image, ImageDraw, ImageFont
-            import tempfile
-
-            size = 64
-            img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-            draw = ImageDraw.Draw(img)
-
-            # Dark rounded background
-            r = 12
-            draw.rounded_rectangle([2, 2, size - 2, size - 2], radius=r,
-                                    fill=(17, 17, 17, 255), outline=(200, 169, 110, 255), width=2)
-
-            # Gold "P" text
-            try:
-                font = ImageFont.truetype("segoeui.ttf", 36)
-            except Exception:
-                try:
-                    font = ImageFont.truetype("arial.ttf", 36)
-                except Exception:
-                    font = ImageFont.load_default()
-
-            bbox = draw.textbbox((0, 0), "P", font=font)
-            tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
-            x = (size - tw) // 2 - bbox[0]
-            y = (size - th) // 2 - bbox[1] - 2
-            draw.text((x, y), "P", fill=(200, 169, 110, 255), font=font)
-
-            ico_path = os.path.join(tempfile.gettempdir(), "_portify_icon.ico")
-            img.save(ico_path, format="ICO", sizes=[(32, 32), (64, 64)])
-            self.iconbitmap(ico_path)
-        except Exception:
-            pass
+            ico_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                    "resources", "Portify.ico")
+            if os.path.exists(ico_path):
+                self.iconbitmap(ico_path)
+            else:
+                log(f"Icon not found: {ico_path}")
+        except Exception as e:
+            log(f"Failed to set icon: {e}")
 
     # ── Manual guide ──────────────────────────────────────────────────────
 

@@ -77,3 +77,5 @@ The output will be in `dist/Portify.exe`.
 ## License
 
 MIT
+
+Also this was mostly vibe-coded dont hate me since it works

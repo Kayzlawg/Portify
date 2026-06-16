@@ -1,0 +1,21 @@
+# Build artifacts
+build/
+dist/
+*.spec
+
+# Runtime
+portify.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp

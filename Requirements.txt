@@ -1,0 +1,14 @@
+Revised Requirements
+====================
+
+- Operating System: Windows (Required for automatic firewall rule management; user must have Administrator privileges to accept UAC elevation).
+- Python: Python 3.6 or higher.
+- Dependencies: customtkinter, requests, and Pillow libraries.
+- Router: A router with UPnP enabled (enabled by default on most home routers; check your router settings if automatic setup fails).
+- Active Server: A running local server is required for the application's connection tests to pass.
+
+----------------
+
+To install the libraries just do this into CMD or Powershell:
+
+	pip install customtkinter requests Pillow
